@@ -1,15 +1,15 @@
 //import img: types for WoodlineClassic95
-import KW1 from '../public/images/NWH/woodline95classic/1-KW(F).png';
-import TOP_SWING from '../public/images/NWH/woodline95classic/TOP_SWING.png';
-import SHL from '../public/images/NWH/woodline95classic/SIDE_HANG_LEWY(SHL).png';
-import SHP from '../public/images/NWH/woodline95classic/SIDE_HANG_PRAWY(SHP).png';
-import KW2 from '../public/images/NWH/woodline95classic/2-KW(SHL_SHP).png';
+import KW1 from '../docs/images/NWH/woodline95classic/1-KW(F).png';
+import TOP_SWING from '../docs/images/NWH/woodline95classic/TOP_SWING.png';
+import SHL from '../docs/images/NWH/woodline95classic/SIDE_HANG_LEWY(SHL).png';
+import SHP from '../docs/images/NWH/woodline95classic/SIDE_HANG_PRAWY(SHP).png';
+import KW2 from '../docs/images/NWH/woodline95classic/2-KW(SHL_SHP).png';
 
 //import img:types for Woodline95 Drzwi balkonowe
-import KW1RL from '../public/images/NWH/woodline95drzwi/1-KW(RL).png';
-import KW1RP from '../public/images/NWH/woodline95drzwi/1-KW(RP).png';
-import KW2RLWRP from '../public/images/NWH/woodline95drzwi/2-KW(RL_W-RP).png';
-import KW2RLRPW from '../public/images/NWH/woodline95drzwi/2-KW(RL_RP_W).png';
+import KW1RL from '../docs/images/NWH/woodline95drzwi/1-KW(RL).png';
+import KW1RP from '../docs/images/NWH/woodline95drzwi/1-KW(RP).png';
+import KW2RLWRP from '../docs/images/NWH/woodline95drzwi/2-KW(RL_W-RP).png';
+import KW2RLRPW from '../docs/images/NWH/woodline95drzwi/2-KW(RL_RP_W).png';
 
 
 const windowSystems =[  

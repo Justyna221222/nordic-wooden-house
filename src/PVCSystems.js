@@ -1,86 +1,86 @@
 //import img: types for PVC IGLO 5 CLASSIC
-import KW1F from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(F).png';
-import KW1U from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(U).png';
-import KW1RLPCV from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(RL).png';
-import KW1RPPCV from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(RP).png';
-import KW1URL from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(URL).png';
-import KW1URP from '../public/images/NWH/IGLO _5_CLASSIC/1-KW(URP).png';
-import KW2RLUPR from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(RL_URP)-SL.STALY.png';
-import KW2URLRP from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(URL_RP)-SL.STALY.png';
-import KW2URLURPSS from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(URL_URP)-SL.STALY.png';
-import KW3URLFURP from '../public/images/NWH/IGLO _5_CLASSIC/3-KW(URL_F_URP).png';
-import KW3URLRLURP from '../public/images/NWH/IGLO _5_CLASSIC/3-KW(URL_RL_URP)-SL.STALY.png';
-import KW3URLRPURP from '../public/images/NWH/IGLO _5_CLASSIC/3-KW(URL_RP_URP)-SL.STALY.png';
-import KW2RL_RL from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(RL_RL).png';
-import KW2RP_RP from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(RP-RP).png';
-import KW2RL_URL from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(RL-URL).png';
-import KW2RP_URP from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(RP-URP).png';
-import KW2URL_URL from '../public/images/NWH/IGLO _5_CLASSIC/2-KW(URL-URL).png';
-import OKRAGLEF from '../public/images/NWH/IGLO _5_CLASSIC/OKRAGLE(F).png';
-import OKRAGLEU from '../public/images/NWH/IGLO _5_CLASSIC/OKRAGLE(U).png';
-import OKRAGLEUF from '../public/images/NWH/IGLO _5_CLASSIC/OKRAGLE(U-F).png';
+import KW1F from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(F).png';
+import KW1U from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(U).png';
+import KW1RLPCV from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(RL).png';
+import KW1RPPCV from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(RP).png';
+import KW1URL from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(URL).png';
+import KW1URP from '../docs/images/NWH/IGLO _5_CLASSIC/1-KW(URP).png';
+import KW2RLUPR from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(RL_URP)-SL.STALY.png';
+import KW2URLRP from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(URL_RP)-SL.STALY.png';
+import KW2URLURPSS from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(URL_URP)-SL.STALY.png';
+import KW3URLFURP from '../docs/images/NWH/IGLO _5_CLASSIC/3-KW(URL_F_URP).png';
+import KW3URLRLURP from '../docs/images/NWH/IGLO _5_CLASSIC/3-KW(URL_RL_URP)-SL.STALY.png';
+import KW3URLRPURP from '../docs/images/NWH/IGLO _5_CLASSIC/3-KW(URL_RP_URP)-SL.STALY.png';
+import KW2RL_RL from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(RL_RL).png';
+import KW2RP_RP from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(RP-RP).png';
+import KW2RL_URL from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(RL-URL).png';
+import KW2RP_URP from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(RP-URP).png';
+import KW2URL_URL from '../docs/images/NWH/IGLO _5_CLASSIC/2-KW(URL-URL).png';
+import OKRAGLEF from '../docs/images/NWH/IGLO _5_CLASSIC/OKRAGLE(F).png';
+import OKRAGLEU from '../docs/images/NWH/IGLO _5_CLASSIC/OKRAGLE(U).png';
+import OKRAGLEUF from '../docs/images/NWH/IGLO _5_CLASSIC/OKRAGLE(U-F).png';
 
 //import img: types for PVC IGLO 5 CLASSIC drzwi balkonowe
-import KW1FD from '../public/images/NWH/PVCdrzwiClassic/1-KW(F).png';
-import KW1RLD from '../public/images/NWH/PVCdrzwiClassic/1-KW(RL).png';
-import KW1RPD from '../public/images/NWH/PVCdrzwiClassic/1-KW(RP).png';
-import KW1URLD from '../public/images/NWH/PVCdrzwiClassic/1-KW(URL).png';
-import KW1URPD from '../public/images/NWH/PVCdrzwiClassic/1-KW(URP).png';
-import KW2URLRPSS from '../public/images/NWH/PVCdrzwiClassic/2-KW(URL_RP)-SL.STALY.png';
-import KW2RLURPSS from '../public/images/NWH/PVCdrzwiClassic/2-KW(RL_URP)-SL.STALY.png';
-import KW2URLURPSSD from '../public/images/NWH/PVCdrzwiClassic/2-KW(URL_URP)-SL.STALY.png';
+import KW1FD from '../docs/images/NWH/PVCdrzwiClassic/1-KW(F).png';
+import KW1RLD from '../docs/images/NWH/PVCdrzwiClassic/1-KW(RL).png';
+import KW1RPD from '../docs/images/NWH/PVCdrzwiClassic/1-KW(RP).png';
+import KW1URLD from '../docs/images/NWH/PVCdrzwiClassic/1-KW(URL).png';
+import KW1URPD from '../docs/images/NWH/PVCdrzwiClassic/1-KW(URP).png';
+import KW2URLRPSS from '../docs/images/NWH/PVCdrzwiClassic/2-KW(URL_RP)-SL.STALY.png';
+import KW2RLURPSS from '../docs/images/NWH/PVCdrzwiClassic/2-KW(RL_URP)-SL.STALY.png';
+import KW2URLURPSSD from '../docs/images/NWH/PVCdrzwiClassic/2-KW(URL_URP)-SL.STALY.png';
 
 //import img: types for PVC Energy Classic
-import Fast_F from '../public/images/NWH/energyClassic/Fast(F).png';
-import KW1_U from '../public/images/NWH/energyClassic/1-KW_U.png';
-import KW1_RL from '../public/images/NWH/energyClassic/1-KW_RL.png';
-import KW1_RP from '../public/images/NWH/energyClassic/1-KW_RP.png';
-import KW1_URL from '../public/images/NWH/energyClassic/1-KW_URL.png';
-import KW1_URP from '../public/images/NWH/energyClassic/1-KW_URP.png';
-import KW2RL__RL from '../public/images/NWH/energyClassic/2-KW(RL_RL).png';
-import KW2RP__RP from '../public/images/NWH/energyClassic/2-KW(RP_RP).png';
-import KW2RL__URL from '../public/images/NWH/energyClassic/2-KW(RL_URL).png';
-import KW2RP__URP from '../public/images/NWH/energyClassic/2-KW(RP_URP).png';
-import KW2URL__URL from '../public/images/NWH/energyClassic/2-KW(URL_URL).png';
-import KW2URP__URP from '../public/images/NWH/energyClassic/2-KW(URP_URP).png';
-import KW2URL__RP from '../public/images/NWH/energyClassic/2-KW(URL_RP).png';
-import KW2RL__URP from '../public/images/NWH/energyClassic/2-KW_(RL_URP).png';
-import KW3URL_RL_URP from '../public/images/NWH/energyClassic/3-KW(URL_RL_URP).png';
-import KW3URL_RP_URP from '../public/images/NWH/energyClassic/3-KW(URL_RP_URP).png';
-import KW2URL_URP from '../public/images/NWH/energyClassic/2-KW.(URL_URP).png';
-import KW3URL_F_URP from '../public/images/NWH/energyClassic/3-KW(URL_F_URP).png';
-import OKRAGLE_F from '../public/images/NWH/energyClassic/okągle(F).png';
+import Fast_F from '../docs/images/NWH/energyClassic/Fast(F).png';
+import KW1_U from '../docs/images/NWH/energyClassic/1-KW_U.png';
+import KW1_RL from '../docs/images/NWH/energyClassic/1-KW_RL.png';
+import KW1_RP from '../docs/images/NWH/energyClassic/1-KW_RP.png';
+import KW1_URL from '../docs/images/NWH/energyClassic/1-KW_URL.png';
+import KW1_URP from '../docs/images/NWH/energyClassic/1-KW_URP.png';
+import KW2RL__RL from '../docs/images/NWH/energyClassic/2-KW(RL_RL).png';
+import KW2RP__RP from '../docs/images/NWH/energyClassic/2-KW(RP_RP).png';
+import KW2RL__URL from '../docs/images/NWH/energyClassic/2-KW(RL_URL).png';
+import KW2RP__URP from '../docs/images/NWH/energyClassic/2-KW(RP_URP).png';
+import KW2URL__URL from '../docs/images/NWH/energyClassic/2-KW(URL_URL).png';
+import KW2URP__URP from '../docs/images/NWH/energyClassic/2-KW(URP_URP).png';
+import KW2URL__RP from '../docs/images/NWH/energyClassic/2-KW(URL_RP).png';
+import KW2RL__URP from '../docs/images/NWH/energyClassic/2-KW_(RL_URP).png';
+import KW3URL_RL_URP from '../docs/images/NWH/energyClassic/3-KW(URL_RL_URP).png';
+import KW3URL_RP_URP from '../docs/images/NWH/energyClassic/3-KW(URL_RP_URP).png';
+import KW2URL_URP from '../docs/images/NWH/energyClassic/2-KW.(URL_URP).png';
+import KW3URL_F_URP from '../docs/images/NWH/energyClassic/3-KW(URL_F_URP).png';
+import OKRAGLE_F from '../docs/images/NWH/energyClassic/okągle(F).png';
 
 //import img: types for PVC IGLO 5 CLASSIC UP
-import KW1UPL from '../public/images/NWH/PVCIgloo5ClassicUP/1-KW(UPL).png';
-import KW1UPP from '../public/images/NWH/PVCIgloo5ClassicUP/1-KW(UPP).png';
-import KW2FUPL from '../public/images/NWH/PVCIgloo5ClassicUP/2-KW(F_UPL).png';
-import KW2UUPF from '../public/images/NWH/PVCIgloo5ClassicUP/2-KW(UUP_F).png';
-import KW2FFUPL from '../public/images/NWH/PVCIgloo5ClassicUP/2-KW(FF_UPL).png';
-import KW2UPPFF from '../public/images/NWH/PVCIgloo5ClassicUP/2-KW(UPP_FF).png';
+import KW1UPL from '../docs/images/NWH/PVCIgloo5ClassicUP/1-KW(UPL).png';
+import KW1UPP from '../docs/images/NWH/PVCIgloo5ClassicUP/1-KW(UPP).png';
+import KW2FUPL from '../docs/images/NWH/PVCIgloo5ClassicUP/2-KW(F_UPL).png';
+import KW2UUPF from '../docs/images/NWH/PVCIgloo5ClassicUP/2-KW(UUP_F).png';
+import KW2FFUPL from '../docs/images/NWH/PVCIgloo5ClassicUP/2-KW(FF_UPL).png';
+import KW2UPPFF from '../docs/images/NWH/PVCIgloo5ClassicUP/2-KW(UPP_FF).png';
 
 //import img: types for PVC IGLO HS
-import KW2FFHSL from '../public/images/NWH/IgloHS/2-KW(FF_HSL).png';
-import KW2HSPFF from '../public/images/NWH/IgloHS/2-KW(HSP_FF).png';
-import KW4FFHSLWHSPFF from '../public/images/NWH/IgloHS/4-KW(FF_HSL.W_HSP_FF).png';
-import KW4FFHSLHSPWFF from '../public/images/NWH/IgloHS/4-KW(FF_HSL_HSP.W_FF).png';
+import KW2FFHSL from '../docs/images/NWH/IgloHS/2-KW(FF_HSL).png';
+import KW2HSPFF from '../docs/images/NWH/IgloHS/2-KW(HSP_FF).png';
+import KW4FFHSLWHSPFF from '../docs/images/NWH/IgloHS/4-KW(FF_HSL.W_HSP_FF).png';
+import KW4FFHSLHSPWFF from '../docs/images/NWH/IgloHS/4-KW(FF_HSL_HSP.W_FF).png';
 
 //import img: types for PVC IGLO EXT
-import FASTFF from '../public/images/NWH/IgloEXT/Fast(FF).png';
-import KW1RLEXT from '../public/images/NWH/IgloEXT/1-KW(RL).png';
-import KW1RPEXT from '../public/images/NWH/IgloEXT/1-KW(RP).png';
-import KW2RLRPSS from '../public/images/NWH/IgloEXT/2-KW.(RL_RP)-SL.STALY.png';
-import KW3RLFFRP from '../public/images/NWH/IgloEXT/3-KW.(RL_FF_RP).png';
-import KW3RLRPWRPSR from '../public/images/NWH/IgloEXT/3-KW.(RL_RP.W_RP.SR).png';
-import KW3RLWRPRPSR from '../public/images/NWH/IgloEXT/3-KW.(RL.W_RP_RP.SR).png';
-import KW3RLRLRPWSR from '../public/images/NWH/IgloEXT/3-KW.(RL_RL_RP.W.SR).png';
-import KW3RLRLWRPSR from '../public/images/NWH/IgloEXT/3-KW.(RL_RL.W_RP.SR).png';
+import FASTFF from '../docs/images/NWH/IgloEXT/Fast(FF).png';
+import KW1RLEXT from '../docs/images/NWH/IgloEXT/1-KW(RL).png';
+import KW1RPEXT from '../docs/images/NWH/IgloEXT/1-KW(RP).png';
+import KW2RLRPSS from '../docs/images/NWH/IgloEXT/2-KW.(RL_RP)-SL.STALY.png';
+import KW3RLFFRP from '../docs/images/NWH/IgloEXT/3-KW.(RL_FF_RP).png';
+import KW3RLRPWRPSR from '../docs/images/NWH/IgloEXT/3-KW.(RL_RP.W_RP.SR).png';
+import KW3RLWRPRPSR from '../docs/images/NWH/IgloEXT/3-KW.(RL.W_RP_RP.SR).png';
+import KW3RLRLRPWSR from '../docs/images/NWH/IgloEXT/3-KW.(RL_RL_RP.W.SR).png';
+import KW3RLRLWRPSR from '../docs/images/NWH/IgloEXT/3-KW.(RL_RL.W_RP.SR).png';
 
 //import img: types for PVC IGLO EXT DRZWI BALKONOWE
-import KW1RLEXTD from '../public/images/NWH/IgloEXTdrzwi/1-KW(RL).png';
-import KW1RPEXTD from '../public/images/NWH/IgloEXTdrzwi/1-KW(RP).png';
-import KW2RLWRPEXTD from '../public/images/NWH/IgloEXTdrzwi/2-KW.(RL.W_RP)-SL.RUCH.png';
-import KW1RLRPWSREXTD from '../public/images/NWH/IgloEXTdrzwi/2-KW.(RL_RP.W)-SL.RUCH.png';
+import KW1RLEXTD from '../docs/images/NWH/IgloEXTdrzwi/1-KW(RL).png';
+import KW1RPEXTD from '../docs/images/NWH/IgloEXTdrzwi/1-KW(RP).png';
+import KW2RLWRPEXTD from '../docs/images/NWH/IgloEXTdrzwi/2-KW.(RL.W_RP)-SL.RUCH.png';
+import KW1RLRPWSREXTD from '../docs/images/NWH/IgloEXTdrzwi/2-KW.(RL_RP.W)-SL.RUCH.png';
 
 
 const windowSystems = [  

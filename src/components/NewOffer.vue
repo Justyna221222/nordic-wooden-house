@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h3>Klient</h3>
+        <h2>Klient</h2>
         <div class="clients-data">
             <div class="two-columns">
                 <div>
@@ -18,7 +18,7 @@
             </div> 
         <button class="change-client" @click="changeClient">Zmień klienta</button>                            
         </div>
-        <h3>Nowa oferta</h3>
+        <h2>Nowa oferta</h2>
         <div class="new-offer">
             <div class="dates">
                 <p>Data od: <input type="date"  v-model="dateFrom"/></p>
@@ -115,7 +115,12 @@ h4 {
     align-items: center;
 }
 textarea {
+    width: 100%;
     resize: none;
+}
+input[type=date] {
+    padding: 5px;
+    font-size: 17px;
 }
 button {
     width: 600px;

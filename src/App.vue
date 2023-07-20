@@ -37,6 +37,7 @@
     padding: 0;
     color: #2a2e28;
     box-sizing: border-box;
+    font-family: "Gill Sans", sans-serif;
 }
 .container1 {
     display: grid;
@@ -50,6 +51,7 @@ p {
 button {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
+  font-size: 18px;
   background-color: #d1d59f;
   border: 1px solid #8e9253;
   color: #32242d;

@@ -2,21 +2,21 @@
     <div class="container">
         <div class="horizontal">
             <div @click="sendTo('/newWindow')">
-                <img src="../../public/images/NWH/window.png"/>
+                <img src="../../docs/images/NWH/window.png"/>
                 <p>Okna lub drzwi balkonowe</p>
             </div>
             <div>
-                <img src="../../public/images/NWH/drzwi_wewnetrzne.png"/>
+                <img src="../../docs/images/NWH/drzwi_wewnetrzne.png"/>
                 <p>Drzwi wewnętrzne</p>
             </div>            
         </div>
         <div class="horizontal">
             <div>
-                <img src="../../public/images/NWH/drzwi_zewnetrzne.png"/>
+                <img src="../../docs/images/NWH/drzwi_zewnetrzne.png"/>
                 <p>Drzwi wejściowe</p>
             </div>
             <div>
-                <img src="../../public/images/NWH/zabudowa_tarasowa.png"/>
+                <img src="../../docs/images/NWH/zabudowa_tarasowa.png"/>
                 <p>Zabudowa tarasowa</p>
             </div>             
         </div>     

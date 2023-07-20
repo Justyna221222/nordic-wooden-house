@@ -11,7 +11,7 @@
 
     <div class="clientsList">
         <div class="main-header">
-            <h3>Wybierz klienta z listy lub utwórz nowego</h3>
+            <h2>Wybierz klienta z listy lub utwórz nowego</h2>
             <button @click="newClient"> Nowy klient </button>            
         </div>
 
