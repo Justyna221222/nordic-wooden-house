@@ -289,5 +289,9 @@ button {
     background-color: rgb(138, 186, 186);
     color: red;
 }
+select {
+    font-size: 18px;
+    padding:5px;
+}
 
 </style>
