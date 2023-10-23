@@ -1,31 +1,26 @@
 <template>
     <div class="container1">
-            <div>  
+            <div>
             </div>
             <div>
                 <the-header></the-header>
             </div>
             <div>
-                <the-basket></the-basket>
-            </div>
-            <div>
             <router-view></router-view>
             </div>
 
-    </div>  
+    </div>
 </template>
 
 <script>
     import TheHeader from './components/TheHeader.vue';
-    import TheBasket from './components/TheBasket.vue';
     export default {
         components: {
             TheHeader,
-            TheBasket
         },
         data() {
             return {
-                
+
             };
         }
     };
@@ -40,9 +35,8 @@
     font-family: "Gill Sans", sans-serif;
 }
 .container1 {
-    display: grid;
-    grid-template-columns: 20% 80%;
-    grid-gap: 0;
+    display: flex;
+    justify-content: center;
 }
 p {
     color: #2a2e28;
@@ -52,17 +46,17 @@ button {
   padding: 0.75rem 1.5rem;
   font-family: inherit;
   font-size: 18px;
-  background-color: #d1d59f;
-  border: 1px solid #8e9253;
-  color: #32242d;
+  background-color: #CFAC58;
+  color: #222222;
+  border: none;
   cursor: pointer;
   margin: 20px 0;
 }
 
 button:hover,
 button:active {
-  background-color: #c2c77c;
-  border:1px solid #797e2e;
+  background-color: #ebc774;
+
 }
 
 .header {
@@ -79,7 +73,7 @@ button:active {
 .route-enter-to {}
 
 .route-leave-active {
-    animation: slide-scale 0.4s ease-in; 
+    animation: slide-scale 0.4s ease-in;
 }
 
 

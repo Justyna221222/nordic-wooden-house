@@ -12,14 +12,14 @@ import KW2RLWRP from '../docs/images/NWH/woodline95drzwi/2-KW(RL_W-RP).png';
 import KW2RLRPW from '../docs/images/NWH/woodline95drzwi/2-KW(RL_RP_W).png';
 
 
-const windowSystems =[  
+const windowSystems =[
     {systemOption: 'Woodline 95 Classic',
         types: [
-            {name:'1-KW(F)', url: KW1, areHandles: false, isPost:false, isDoorstep: false, isOpened: false, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false},
-            {name:'TOP SWING', url: TOP_SWING, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false}, 
-            {name: 'SIDE HUNG LEWY(SHL)', url: SHL, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false},
-            {name: 'SIDE HUNG PRAWY(SHP)', url: SHP, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false},
-            {name: '2-KW(SHL_SHP)', url: KW2, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false},
+            {name:'1-KW(F)', url: KW1, areHandles: false, isPost:false, isDoorstep: false, isOpened: false, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name:'TOP SWING', url: TOP_SWING, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: true, areMuntins: true, isGrabber: false},
+            {name: 'SIDE HUNG LEWY(SHL)', url: SHL, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: true, areMuntins: true, isGrabber: false},
+            {name: 'SIDE HUNG PRAWY(SHP)', url: SHP, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: true, areMuntins: true, isGrabber: false},
+            {name: '2-KW(SHL_SHP)', url: KW2, areHandles: true,  isPost:false, isDoorstep: false, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: true, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Srebrna HOPPE TOKYO MINI'},
@@ -36,10 +36,10 @@ const windowSystems =[
 },
     {systemOption: 'Woodline 95 Drzwi balkonowe',
     types: [
-            {name:'1-KW.(RL)', url: KW1RL, areHandles: true,  isPost:false, isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true},
-            {name:'1-KW.(RP)', url: KW1RP, areHandles: true,  isPost:false, isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true}, 
-            {name: '2-KW.(RL.W_RP)', url: KW2RLWRP, areHandles: true,  isPost:true, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true},
-            {name: '2-KW.(RL_RP.W)', url: KW2RLRPW, areHandles: true,  isPost:true, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true},
+            {name:'1-KW.(RL)', url: KW1RL, areHandles: true,  isPost:false, isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name:'1-KW.(RP)', url: KW1RP, areHandles: true,  isPost:false, isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RL.W_RP)', url: KW2RLWRP, areHandles: true,  isPost:true, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RL_RP.W)', url: KW2RLRPW, areHandles: true,  isPost:true, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'częściowe wypełnienie + szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Srebrny mat klamka (obustronnie), gałka od wewnątrz'},

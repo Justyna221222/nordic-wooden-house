@@ -4,19 +4,19 @@
         <div class="clients-data">
             <div class="two-columns">
                 <div>
-                    <div><p>{{ this.$store.state.client.firstname }}</p></div>
-                    <div><p>{{ this.$store.state.client.surname }}</p></div>
+                    <div class="name"><p>{{ this.$store.state.client.firstname }}</p></div>
+                    <div class="name"><p>{{ this.$store.state.client.surname }}</p></div>
                     <div><p>tel: {{ this.$store.state.client.tel }}</p></div>
-                    <div><p>email: {{ this.$store.state.client.email }}</p></div>           
+                    <div><p>email: {{ this.$store.state.client.email }}</p></div>
                 </div>
                 <div>
                     <div><h4>Adres dostawy:</h4></div>
                     <div><p>{{ this.$store.state.client.street }}</p></div>
                     <div><p>{{ this.$store.state.client.zipcode }} {{ this.$store.state.client.city }}</p></div>
-                    <div><p>{{ this.$store.state.client.country }}</p></div>            
-                </div> 
-            </div> 
-        <button class="change-client" @click="changeClient">Zmień klienta</button>                            
+                    <div><p>{{ this.$store.state.client.country }}</p></div>
+                </div>
+            </div>
+        <button class="change-client" @click="changeClient">Zmień klienta</button>
         </div>
         <h2>Nowa oferta</h2>
         <div class="new-offer">
@@ -29,10 +29,10 @@
                 <textarea type="textarea" id="desc" name="desc" rows="4" cols="50" v-model="description"></textarea>
             </div>
         </div>
-        <button class="set-offer" @click="setOffer">Dalej</button> 
- <div>{{ this.$store.state.dateFrom }}</div>
- <div>{{ this.$store.state.dateTo }}</div>
- <div>{{ this.$store.state.description }}</div>
+        <div v-if="error" class="error-message">
+            <p>Uzupełnij daty rozpoczęścia i zakończenia oferty.</p>
+        </div>
+        <button class="set-offer" @click="setOffer">Dalej</button>
     </div>
 </template>
 
@@ -42,18 +42,26 @@ export default ({
         return {
             dateFrom: '',
             dateTo: '',
-            description: ''
+            description: '',
+            error: false
         };
     },
     methods: {
         changeClient() {
-            this.$router.push("/clientData"); 
+            this.$router.push("/clientData");
         },
         setOffer() {
-            this.$store.commit('setDateFrom', this.dateFrom);
-            this.$store.commit('setDateTo', this.dateTo);  
-            this.$store.commit('setDescription', this.description);  
-            this.$router.push("/offerList"); 
+            if(this.dateFrom === '' || this.dateTo === '') {
+                this.error = true;
+                return;
+            } else {
+                this.error = false;
+                this.$store.commit('setDateFrom', this.dateFrom);
+                this.$store.commit('setDateTo', this.dateTo);
+                this.$store.commit('setDescription', this.description);
+                this.$router.push("/offerList");
+            }
+
         }
     }
 })
@@ -84,6 +92,9 @@ export default ({
 }
 .two-columns div {
     margin: 20px;
+}
+.two-columns .name {
+    font-weight: bold;
 }
 h4 {
     font-weight: bold;
@@ -117,6 +128,7 @@ h4 {
 textarea {
     width: 100%;
     resize: none;
+    padding: 5px;
 }
 input[type=date] {
     padding: 5px;
@@ -124,6 +136,11 @@ input[type=date] {
 }
 button {
     width: 600px;
+}
+.error-message p{
+    margin: 15px 0 0 0;
+    color: red;
+    font-size: 18px;
 }
 
 </style>

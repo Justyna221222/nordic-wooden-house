@@ -8,7 +8,7 @@
             <div>
                 <img src="../../docs/images/NWH/drzwi_wewnetrzne.png"/>
                 <p>Drzwi wewnętrzne</p>
-            </div>            
+            </div>
         </div>
         <div class="horizontal">
             <div>
@@ -18,8 +18,8 @@
             <div>
                 <img src="../../docs/images/NWH/zabudowa_tarasowa.png"/>
                 <p>Zabudowa tarasowa</p>
-            </div>             
-        </div>     
+            </div>
+        </div>
     </div>
 
 </template>
@@ -34,7 +34,7 @@ export default ({
     },
     methods: {
         sendTo(path) {
-            this.$router.push(path); 
+            this.$router.push(path);
         }
     }
 })
@@ -61,10 +61,10 @@ export default ({
     margin: 10px;
     width: 380px;
     height: 380px;
-    border: 5px solid #ced496;
+    border: 5px solid #CFAC58;
 }
 .horizontal div:hover {
-    border: 5px solid #909a6b;
+    border: 5px solid #ebc774;
     cursor: pointer;
 }
 .horizontal div p {

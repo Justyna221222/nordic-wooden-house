@@ -2,7 +2,7 @@
     <div class="container">
         <div class="wooden-PVC">
             <div @click="wooden" :class="isShown === 'drewniane' ? 'active' : ''">Drewniane</div>
-            <div @click="PVC" :class="isShown === 'PVC' ? 'active' : ''">PVC</div>        
+            <div @click="PVC" :class="isShown === 'PVC' ? 'active' : ''">PVC</div>
         </div>
         <div>
             <div v-if="isShown === 'drewniane'">
@@ -19,12 +19,12 @@
                     <ul class="type-container">
                         <li v-for="type in typesToShow" :key="type" >
                             <label class="type-element" :class="{ activeType: (type.name === activeId) }">
-                                <div><img v-bind:src="type.url" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling)"></div>
-                                <input type="radio" name="type" :value="type.name" class="element" id="type.name" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling)"><p>{{ type.name }}</p>                                
-                            </label>     
+                                <div><img v-bind:src="type.url" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling, type.isDiffuser, type.areHooksForviders, type.areMuntins, type.isBrake, type.isFitting, type.isEspagnolette, type.isInsert, type.isGrabber)"></div>
+                                <input type="radio" name="type" :value="type.name" class="element" id="type.name" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling, type.isDiffuser, type.areHooksForviders, type.areMuntins, type.isBrake, type.isFitting, type.isEspagnolette, type.isInsert, type.isGrabber)"><p>{{ type.name }}</p>
+                            </label>
                         </li>
                     </ul>
-               </div>                           
+               </div>
             </div>
             <div v-if="isShown === 'PVC'">
                 <div class="system-container">
@@ -40,19 +40,18 @@
                     <ul class="type-container">
                         <li v-for="type in typesToShow" :key="type" >
                             <label class="type-element" :class="{ activeType: (type.name === activeId) }">
-                                <div><img v-bind:src="type.url" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling)"></div>
-                                <input type="radio" name="type" :value="type.name" class="element" id="type.name" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling)"><p>{{ type.name }}</p>                                
-                            </label>     
+                                <div><img v-bind:src="type.url" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling, type.isDiffuser, type.areHooksForviders, type.areMuntins, type.isBrake, type.isFitting, type.isEspagnolette, type.isInsert, type.isGrabber)"></div>
+                                <input type="radio" name="type" :value="type.name" class="element" id="type.name" @click="chooseType(type.name, type.areHandles, type.isPost, type.posts, type.isDoorstep, type.isOpened, type.filling, type.isDiffuser, type.areHooksForviders, type.areMuntins, type.isBrake, type.isFitting, type.isEspagnolette, type.isInsert, type.isGrabber)"><p>{{ type.name }}</p>
+                            </label>
                         </li>
                     </ul>
-               </div>  
+               </div>
 
             </div>
         </div>
-        <div class="error-message"><p>{{ this.errorMessage }}</p></div> 
-        <button @click="setSystemAndType">Dalej</button>             
+        <div class="error-message"><p>{{ this.errorMessage }}</p></div>
+        <button @click="setSystemAndType">Dalej</button>
     </div>
-    <div>{{ filling }}</div>
 
 </template>
 <script>
@@ -67,7 +66,7 @@ export default ({
             isShown: '',
             woodenSystems: systemsOfWood,
             PVCSystems: systemsOfPVC,
-           
+
             woodenSystem: '',
             woodenType: '',
             PVCSystem: '',
@@ -93,7 +92,15 @@ export default ({
                 'STANDARDOWY BIAŁY RAL9020',
                 'KOLOR NIESTANDARDOWY RAL'
             ],
-            filling: []
+            filling: [],
+            isDiffuser: true,
+            areHooksForviders: false,
+            areMuntins: true,
+            isBrake: false,
+            isGrabber: false,
+            isFitting: false,
+            isEspagnolette: false,
+            isInsert: false
 
         }
     },
@@ -102,7 +109,7 @@ export default ({
             const system = this.woodenSystem;
             if(system != '') {
                 let typesArray = this.woodenSystems.find(option => option.systemOption == system);
-                this.$store.commit('setChoosenSystem', typesArray); 
+                this.$store.commit('setChoosenSystem', typesArray);
                 let profilesList = typesArray.profiles;
                 this.profilesToChoose = profilesList;
                 let doorstepsList = typesArray.doorsteps;
@@ -111,17 +118,15 @@ export default ({
                 this.openedOption = optionsToOpen;
                 let typesList = typesArray.types;
                 this.typesToShow = typesList;
-                return typesList;                
+                return typesList;
             }
-
-
         },
         PVCSystem() {
             const system = this.PVCSystem;
-            console.log(system);
+           // console.log(system);
            if(system !=""){
                 let typesArray = this.PVCSystems.find(option => option.systemOption == system);
-                this.$store.commit('setChoosenSystem', typesArray); 
+                this.$store.commit('setChoosenSystem', typesArray);
                 let typesList = typesArray.types;
                 this.typesToShow = typesList;
                 let profilesList = typesArray.profiles;
@@ -130,24 +135,32 @@ export default ({
                 this.doorstepsToChoose = doorstepsList;
                 let optionsToOpen = typesArray.openOption;
                 this.openedOption = optionsToOpen;
-                return typesList;                
+                return typesList;
            // } else{
-            //    return system;                
+            //    return system;
            // }
         }
     }
 },
     methods: {
-        chooseType(typeName, areHandles, isPost, posts, isDoorstep, isOpened, filling) {
+        chooseType(typeName, areHandles, isPost, posts, isDoorstep, isOpened, filling, isDiffuser, areHooksForviders, areMuntins, isBrake, isFitting, isEspagnolette, isInsert, isGrabber) {
             this.isPost = isPost;
             this.posts = posts;
             this.activeId = typeName;
             this.isDoorstep = isDoorstep;
             this.isOpened = isOpened;
             this.filling = filling;
+            this.isDiffuser = isDiffuser;
+            this.areHooksForviders = areHooksForviders;
+            this.areMuntins = areMuntins;
+            this.isBrake = isBrake;
+            this.isFitting = isFitting;
+            this.isGrabber = isGrabber;
+            this.isEspagnolette = isEspagnolette;
+            this.isInsert = isInsert;
             if(this.isShown === 'drewniane') {
                 this.woodenType = typeName;
-                this.isHandle = areHandles;                
+                this.isHandle = areHandles;
             } else {
                 this.PVCType = typeName;
                 this.isHandle = areHandles;
@@ -174,16 +187,24 @@ export default ({
                 this.$store.commit('setIsOpened', this.isOpened);
                 this.$store.commit('setOpenedOptions', this.openedOption);
                 this.$store.commit('setFilling', this.filling);
+                this.$store.commit('setIsDiffuser', this.isDiffuser);
+                this.$store.commit('setAreHooksForviders', this.areHooksForviders);
+                this.$store.commit('setAreMuntins', this.areMuntins);
+                this.$store.commit('setIsBrake', this.isBrake);
+                this.$store.commit('setIsFitting', this.isFitting);
+                this.$store.commit('setIsGrabber', this.isGrabber);
+                this.$store.commit('setIsEspagnolette', this.isEspagnolette);
+                this.$store.commit('setIsInsert', this.isInsert);
                 if(this.woodenSystem !== "" && this.woodenType !=="") {
                     this.errorMessage = "";
-                    this.$store.commit('setSystem', this.woodenSystem); 
+                    this.$store.commit('setSystem', this.woodenSystem);
                     this.$store.commit('setType', this.woodenType);
-                    this.$store.commit('setColorsInsideOrOutside', this.WoodenColorsOutsideOrInside); 
+                    this.$store.commit('setColorsInsideOrOutside', this.WoodenColorsOutsideOrInside);
                 } else if(this.PVCSystem !=="" && this.PVCType !== "") {
                     this.errorMessage = "";
-                    this.$store.commit('setSystem', this.PVCSystem); 
+                    this.$store.commit('setSystem', this.PVCSystem);
                     this.$store.commit('setType', this.PVCType);
-                    this.$store.commit('setColorsInsideOrOutside', this.PVCcolorsOutsideOrInside);                  
+                    this.$store.commit('setColorsInsideOrOutside', this.PVCcolorsOutsideOrInside);
                 } else {
                     this.errorMessage = "Wprowadź typ okna."
                     return;
@@ -214,7 +235,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 .system-container option{
     height: 20px;
@@ -232,17 +253,17 @@ h3 {
     align-items: center;
     width: 200px;
     margin: 10px;
-    border: 3px solid #909a6b;
+    border: 3px solid #CFAC58;
     padding: 10px;
     font-size: 18px;
 }
 .wooden-PVC div:hover {
     cursor: pointer;
-    border: 4px solid  #323730;
+    border: 4px solid  #ebc774;
     color: black;
 }
 .wooden-PVC .active {
-    border: 4px solid rgb(184, 40, 40);
+    border: 4px solid rgb(116, 20, 20);
     color: black;
     font-weight: bold;
 }
@@ -263,14 +284,14 @@ li {
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid rgb(193, 189, 189);
-    width: 500px;   
+    width: 500px;
 }
 .type-element p {
     margin: 15px;
 }
 .type-element:hover {
     cursor: pointer;
-    border-bottom: 1px solid rgb(246, 86, 86);
+    border-bottom: 2px solid #685425;
 }
 input[type="radio"]{
   visibility: hidden;
@@ -286,7 +307,7 @@ button {
     width: 400px;
 }
 .activeType {
-    background-color: rgb(138, 186, 186);
+    background-color: #edd398;
     color: red;
 }
 select {

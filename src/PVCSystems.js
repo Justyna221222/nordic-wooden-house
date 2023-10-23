@@ -83,30 +83,30 @@ import KW2RLWRPEXTD from '../docs/images/NWH/IgloEXTdrzwi/2-KW.(RL.W_RP)-SL.RUCH
 import KW1RLRPWSREXTD from '../docs/images/NWH/IgloEXTdrzwi/2-KW.(RL_RP.W)-SL.RUCH.png';
 
 
-const windowSystems = [  
+const windowSystems = [
     {systemOption: 'IGLO 5 CLASSIC',
         types: [
-            {name: '1-KW(F)', url: KW1F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: false},
-            {name: '1-KW(U)', url: KW1U, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '1-KW(RL)', url: KW1RLPCV, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '1-KW(RP)', url: KW1RPPCV, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '1-KW(URL)', url: KW1URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '1-KW(URP)', url: KW1URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(URL_RP)', url: KW2URLRP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(RL_URP)', url: KW2RLUPR, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(URL_URP)', url: KW2URLURPSS, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '3-KW(URL_F_URP)', url: KW3URLFURP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '3-KW(URL_RL_URP)', url: KW3URLRLURP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '3-KW(URL_RP_URP)', url: KW3URLRPURP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, isBrake: true},
-            {name: '2-KW(RL/RL)', url: KW2RL_RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(RP/RP)', url: KW2RP_RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(RL/URL)', url: KW2RL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(RP/URP)', url: KW2RP_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(URP/URP)', url: KW2URL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: '2-KW(URL/URL)', url: KW2URL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true},
-            {name: 'OKRĄGŁE(F)', url: OKRAGLEF, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: 'OKRĄGŁE(U)', url: OKRAGLEU, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba'], isBrake: true},
-            {name: 'OKRĄGŁE(U/F)', url: OKRAGLEUF, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba'], isBrake: true},
+            {name: '1-KW(F)', url: KW1F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(U)', url: KW1U, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(RL)', url: KW1RLPCV, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(RP)', url: KW1RPPCV, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(URL)', url: KW1URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(URP)', url: KW1URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(URL_RP)', url: KW2URLRP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RL_URP)', url: KW2RLUPR, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(URL_URP)', url: KW2URLURPSS, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(URL_F_URP)', url: KW3URLFURP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(URL_RL_URP)', url: KW3URLRLURP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(URL_RP_URP)', url: KW3URLRPURP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RL/RL)', url: KW2RL_RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RP/RP)', url: KW2RP_RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RL/URL)', url: KW2RL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RP/URP)', url: KW2RP_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(URP/URP)', url: KW2URL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(URL/URL)', url: KW2URL_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel', 'bez wypełnienia'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: 'OKRĄGŁE(F)', url: OKRAGLEF, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: false, areHooksForviders: false, areMuntins: false, isGrabber: false},
+            {name: 'OKRĄGŁE(U)', url: OKRAGLEU, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: false, areHooksForviders: false, areMuntins: false, isGrabber: false},
+            {name: 'OKRĄGŁE(U/F)', url: OKRAGLEUF, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: false, areHooksForviders: false, areMuntins: false, isGrabber: false},
         ],
         handles: [
             {name: 'Biała'},
@@ -167,19 +167,25 @@ const windowSystems = [
         brakeOptions: [
             'BRAK',
             'HAMULEC W KLAMCE'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD',
+            'Niewidoczne okucia MACO INVISIBLE',
+            'OKUCIA ANTYWŁAMANIOWE KLASY RC2'
         ]
 
     },
     {systemOption: 'IGLO 5 Classic Drzwi balkonowe',
     types: [
-            {name: '1-KW(F)', url: KW1FD, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false},
-            {name: '1-KW(RL)', url: KW1RLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW(RP)', url: KW1RPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW(URL)', url: KW1URLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW(URP)', url: KW1URPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW(URL_RP)', url: KW2URLRPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW(RL_URP)', url: KW2RLURPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL_URP)', url: KW2URLURPSSD, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
+            {name: '1-KW(F)', url: KW1FD, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(RL)', url: KW1RLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW(RP)', url: KW1RPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW(URL)', url: KW1URLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW(URP)', url: KW1URPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW(URL_RP)', url: KW2URLRPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW(RL_URP)', url: KW2RLURPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW.(URL_URP)', url: KW2URLURPSSD, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: true, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
 
         ],
         handles: [
@@ -243,29 +249,41 @@ const windowSystems = [
             'BRAK',
             'HAMULEC W KLAMCE',
             'HAMULEC CIERNY'
-        ]  
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD',
+            'Niewidoczne okucia MACO INVISIBLE',
+            'OKUCIA ANTYWŁAMANIOWE KLASY RC2',
+            'ZAWIASY P800 małe'
+        ],
+        espagnoletteOptions: [
+            'STANDARDOWE OKUCIE MACO',
+            'ZASUWNICA DOORMAS - KLAMKA 2 STRONY'
+        ]
+
     },
     {systemOption: 'Iglo ENERGY CLASSIC',
     types: [
-            {name: 'Fast F', url: Fast_F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false},
-            {name: '1-KW U', url: KW1_U, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW RL', url: KW1_RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true}, 
-            {name: '1-KW RP', url: KW1_RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW URL', url: KW1_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW URP', url: KW1_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL_RP)', url: KW2URL__RP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(RL_URP)', url: KW2RL__URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL_URP)', url: KW2URL_URP, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW.(URL_F_URP)', url: KW3URL_F_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW.(URL_RL_URP)', url: KW3URL_RL_URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW.(URL_RP_URP)', url: KW3URL_RP_URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(RL/RL)', url: KW2RL__RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panela'], isBrake: true},
-            {name: '2-KW.(RP/RP)', url: KW2RP__RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(RL/URL)', url: KW2RL__URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(RP/URP)', url: KW2RP__URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL/URL)', url: KW2URL__URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URP/URP)', url: KW2URP__URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: 'OKRĄGŁE (F)', url: OKRAGLE_F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
+            {name: 'Fast F', url: Fast_F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW U', url: KW1_U, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW RL', url: KW1_RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW RP', url: KW1_RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW URL', url: KW1_URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW URP', url: KW1_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(URL_RP)', url: KW2URL__RP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RL_URP)', url: KW2RL__URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(URL_URP)', url: KW2URL_URP, areHandles: true, isPost: true, posts: ['STAŁY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW.(URL_F_URP)', url: KW3URL_F_URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW.(URL_RL_URP)', url: KW3URL_RL_URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW.(URL_RP_URP)', url: KW3URL_RP_URP, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RL/RL)', url: KW2RL__RL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panela'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RP/RP)', url: KW2RP__RP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RL/URL)', url: KW2RL__URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(RP/URP)', url: KW2RP__URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(URL/URL)', url: KW2URL__URL, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW.(URP/URP)', url: KW2URP__URP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: 'OKRĄGŁE (F)', url: OKRAGLE_F, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: false, areHooksForviders: false, areMuntins: false, isGrabber: false},
            // {name: 'OKRĄGŁE(U)', url: OKRAGLEU, areHandles: true, isPost: false, isDoorstep: false, isOpened: true},
            // {name: 'OKRĄGŁE(U/F)', url: OKRAGLEUF, areHandles: true, isPost: false, isDoorstep: false, isOpened: true},
         ],
@@ -326,20 +344,24 @@ const windowSystems = [
         brakeOptions: [
             'BRAK',
             'HAMULEC W KLAMCE'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD',
+            'Niewidoczne okucia MACO INVISIBLE',
+            'OKUCIA ANTYWŁAMANIOWE KLASY RC2'
         ]
-            
-
     },
     {systemOption: 'Iglo ENERGY CLASSIC drzwi balkonowe',
     types: [
-            {name: '1-KW.(F)', url: KW1FD, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false},
-            {name: '1-KW.(RL)', url: KW1RLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW.(RP)', url: KW1RPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW.(URL)', url: KW1URLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW.(URP)', url: KW1URPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL_RP)', url: KW2URLRPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(RL_URP)', url: KW2RLURPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW.(URL_URP)', url: KW2URLURPSSD, areHandles: true, isPost: false, posts: ['STAŁY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
+            {name: '1-KW.(F)', url: KW1FD, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW.(RL)', url: KW1RLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW.(RP)', url: KW1RPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW.(URL)', url: KW1URLD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW.(URP)', url: KW1URPD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW.(URL_RP)', url: KW2URLRPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW.(RL_URP)', url: KW2RLURPSS, areHandles: true, isPost: true, posts: ['STAŁY', 'RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW.(URL_URP)', url: KW2URLURPSSD, areHandles: true, isPost: false, posts: ['STAŁY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
 
         ],
         handles: [
@@ -404,16 +426,23 @@ const windowSystems = [
             'BRAK',
             'HAMULEC W KLAMCE',
             'HAMULEC CIERNY'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD',
+            'Niewidoczne okucia MACO INVISIBLE',
+            'OKUCIA ANTYWŁAMANIOWE KLASY RC2',
+            'ZAWIASY P800 małe'
         ]
     },
     {systemOption: 'Iglo 5 Classic UP',
     types: [
-            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false}, 
-            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
+            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Biała tylko od środka-UP'},
@@ -428,16 +457,22 @@ const windowSystems = [
         doorsteps: [
             'PRÓG I OKAPNIK MAT',
             'PRÓG I OKAPNIK POŁYSK'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD (przesuwne)',
+            'OKUCIE AUTOMATYCZNE DRZWI TARASOWYCH (przesuwne)',
+            'OKUCIE WZMOCNIONE AUTOMATYCZNE DRZWI TARASOWYCH - 200KD (przesuwne)',
         ]
     },
     {systemOption: 'Iglo 5 Classic UP-PP',
     types: [
-            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false}, 
-            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false},
+            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Biała - UP na PP (dwustronna)'},
@@ -445,16 +480,26 @@ const windowSystems = [
             {name: 'Srebrna - UP na PP (dwustronna)'},
             {name: 'Brak klamki'}
         ],
-        profiles: ['BIAŁY']
+        profiles: ['BIAŁY'],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD (przesuwne)',
+            'OKUCIE AUTOMATYCZNE DRZWI TARASOWYCH (przesuwne)',
+            'OKUCIE WZMOCNIONE AUTOMATYCZNE DRZWI TARASOWYCH - 200KD (przesuwne)',
+        ],
+        insertOptions: [
+            'WKŁADKA POŁÓWKOWA OD WEWNĄTRZ (górna)',
+            'WKŁADKA GŁÓWNA OBUSTRONNA (górna)',
+        ]
     },
     {systemOption: 'IGLO Energy Classic UP',
     types: [
-            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false}, 
-            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
+            {name: '1-KW(UPL)', url: KW1UPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(UPP)', url: KW1UPP, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(F_UPL)', url: KW2FUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_F)', url: KW2UUPF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(FF_UPL)', url: KW2FFUPL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(UPP_FF)', url: KW2UPPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Biała tylko od środka-UP'},
@@ -469,14 +514,20 @@ const windowSystems = [
         doorsteps: [
             'PRÓG I OKAPNIK MAT',
             'PRÓG I OKAPNIK POŁYSK'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD (przesuwne)',
+            'OKUCIE AUTOMATYCZNE DRZWI TARASOWYCH (przesuwne)',
+            'OKUCIE WZMOCNIONE AUTOMATYCZNE DRZWI TARASOWYCH - 200KD (przesuwne)',
         ]
     },
     {systemOption: 'IGLO HS',
         types: [
-            {name: '2-KW(FF_HSL)', url: KW2FFHSL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '2-KW(HSP_FF)', url: KW2HSPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false}, 
-            {name: '4-KW(FF_HSL.W_HSP_FF)', url: KW4FFHSLWHSPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false},
-            {name: '4-KW(FF_HSL_HSP.W_FF)', url: KW4FFHSLHSPWFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false}
+            {name: '2-KW(FF_HSL)', url: KW2FFHSL, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(HSP_FF)', url: KW2HSPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: false, isFitting: true, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '4-KW(FF_HSL.W_HSP_FF)', url: KW4FFHSLWHSPFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '4-KW(FF_HSL_HSP.W_FF)', url: KW4FFHSLHSPWFF, areHandles: true, isPost: false, isDoorstep: true, isOpened: false, filling: ['szyba'], isBrake: true, isFitting: false, isEspagnolette: false, isInsert: true, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false}
         ],
         handles: [
             {name: 'Zew.pochwyt biały/wew.klamka biała(HS)'},
@@ -498,26 +549,38 @@ const windowSystems = [
         doorsteps: [
             'PRÓG I OKAPNIK MAT',
             'PRÓG I OKAPNIK POŁYSK'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD (przesuwne)',
+            'ZWIĘKSZONA WYTRZYMAŁOŚĆ OKUĆ - OD 300 KG DO 400 KG (przesuwne)',
+            'NAPĘD HS MASTER (przesuwne)'
+        ],
+        insertOptions: [
+            'BRAK',
+            'WKŁADKA HS - OBUSTRONNA',
+            'WKŁADKA HS KLASY C - TYLKO OD ŚRODKA',
+            'WKŁADKA HS KLASY C - OBUSTRONNA'
         ]
-        
+
     },
     {systemOption: 'IGLO EXT',
     types: [
-            {name: 'Fast F', url: FASTFF, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false},
-            {name: '1-KW(RL)', url: KW1RLEXT, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW(RP)', url: KW1RPEXT, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true}, 
-            {name: '2-KW(RL_RP)-SŁ.STAŁY', url: KW2RLRPSS, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW(RL_FF_RP)', url: KW3RLFFRP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW(RL_RP.W_RP.SR)', url: KW3RLRPWRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW(RL.W_RP_RP.SR)', url: KW3RLWRPRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW(RL_RL_RP.W.SR)', url: KW3RLRLRPWSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '3-KW(RL_RL.W_RP.SR)', url: KW3RLRLWRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
+            {name: 'Fast F', url: FASTFF, areHandles: false, isPost: false, isDoorstep: false, isOpened: false, filling: ['szyba', 'szyba + panel'], isBrake: false, isFitting: false, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(RL)', url: KW1RLEXT, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '1-KW(RP)', url: KW1RPEXT, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '2-KW(RL_RP)-SŁ.STAŁY', url: KW2RLRPSS, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(RL_FF_RP)', url: KW3RLFFRP, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(RL_RP.W_RP.SR)', url: KW3RLRPWRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(RL.W_RP_RP.SR)', url: KW3RLWRPRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(RL_RL_RP.W.SR)', url: KW3RLRLRPWSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
+            {name: '3-KW(RL_RL.W_RP.SR)', url: KW3RLRLWRPSR, areHandles: true, isPost: false, isDoorstep: false, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: false},
         ],
         handles: [
             {name: 'Klamka okienna biała EXT'},
             {name: 'Klamka okienna F1 srebrna(EXT)'},
             {name: 'BRAK KLAMKI'},
-        ],    
+        ],
         profiles: ['BIAŁY'],
         openOption: [
             'na zewnątrz'
@@ -525,14 +588,18 @@ const windowSystems = [
         brakeOptions: [
             'BRAK',
             'HAMULEC W KLAMCE'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'Niewidoczne okucia MACO INVISIBLE',
         ]
     },
     {systemOption: 'IGLO EXT drzwi balkonowe',
     types: [
-            {name: '1-KW.(RL)', url: KW1RLEXTD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '1-KW.(RP)', url: KW1RPEXTD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true}, 
-            {name: '2-KW.(RL.W_RP)', url: KW2RLWRPEXTD, areHandles: true, isPost: false, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
-            {name: '2-KW(RL_RP.W)', url: KW1RLRPWSREXTD, areHandles: true, isPost: false, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true},
+            {name: '1-KW.(RL)', url: KW1RLEXTD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '1-KW.(RP)', url: KW1RPEXTD, areHandles: true, isPost: false, isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW.(RL.W_RP)', url: KW2RLWRPEXTD, areHandles: true, isPost: false, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
+            {name: '2-KW(RL_RP.W)', url: KW1RLRPWSREXTD, areHandles: true, isPost: false, posts: ['RUCHOMY'], isDoorstep: true, isOpened: true, filling: ['szyba', 'szyba + panel'], isBrake: true, isFitting: true, isEspagnolette: false, isInsert: false, isDiffuser: true, areHooksForviders: false, areMuntins: true, isGrabber: true},
         ],
         handles: [
             {name: 'Biała klamka tylko od wewnątrz'},
@@ -540,7 +607,7 @@ const windowSystems = [
             {name: 'BRAK KLAMKI'},
             {name: 'Zew. klamka biała/wew. klamka biała(EXT)'},
             {name: 'Zew. klamka F1 srebrna/wew.klamka F1 srebrna(EXT)'},
-        ],  
+        ],
         profiles: ['BIAŁY'],
         doorsteps: [
             'RAMA',
@@ -555,6 +622,11 @@ const windowSystems = [
             'BRAK',
             'HAMULEC W KLAMCE',
             'HAMULEC CIERNY'
+        ],
+        fittingOptions: [
+            'BRAK',
+            'STANDARD',
+            'Niewidoczne okucia MACO INVISIBLE',
         ]
     },
 ]

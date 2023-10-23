@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import TheBasket from './components/TheBasket.vue';
 import TheSummary from './components/TheSummary.vue';
 
 
@@ -14,15 +13,14 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {path: '/', component: ClientData},
-        {path: '/basket', component: TheBasket},
-        {path: '/summary', component: TheSummary},
 
 
         {path: '/clientData', component: ClientData},
         {path: '/newOffer', component: NewOffer},
-        {path: '/offerList', component: OfferList},  
+        {path: '/offerList', component: OfferList},
         {path: '/newWindow', component: NewWindow},
-        {path: '/mainInfo', component: MainInfo}     
+        {path: '/mainInfo', component: MainInfo},
+        {path: '/theSummary', component: TheSummary}
     ]
 });
 
