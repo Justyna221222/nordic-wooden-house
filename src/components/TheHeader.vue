@@ -1,6 +1,6 @@
 <template>
-    <div class="buttons">
-       <!-- <div class="buttonFrame">
+  <div class="buttons">
+    <!-- <div class="buttonFrame">
             <router-link to="/windowType" type="button" class="button">Type</router-link>
         </div>
         <div class="buttonFrame">
@@ -8,7 +8,7 @@
         </div>
         <div class="buttonFrame">
             <router-link to="/windowProfile" type="button" class="button">Profile</router-link>
-        </div>        
+        </div>
         <div class="buttonFrame">
             <router-link to="/windowVenner" type="button" class="button">Veneer</router-link>
         </div>
@@ -31,42 +31,42 @@
             <router-link to="/summary" type="button" class="button">Summary</router-link>
         </div>
 -->
-    </div>
+  </div>
 </template>
 <script>
-    export default {
-        data() {
-            return {
-                whateverActivatesThisLink: true
-            };
-        },
-    }
+export default {
+  data() {
+    return {
+      whateverActivatesThisLink: true
+    };
+  }
+};
 </script>
 
 <style scoped>
 .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    margin: 20px 0;
-    padding: 0;
- }
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 20px 0;
+  padding: 0;
+}
 /*.button {
     padding:10px 20px;
     float: left;
     min-width: 100px;
 }*/
 .button {
-    display: inline-block;
-    padding: 1.2rem 2.2rem;
-    margin: 0;
-    font-family: inherit;
-    background-color: #690f0f;
-    border: 1px solid #690f0f;
-    color: white;
-    cursor: pointer;
-    text-decoration: none;
-    white-space: nowrap;    
+  display: inline-block;
+  padding: 1.2rem 2.2rem;
+  margin: 0;
+  font-family: inherit;
+  background-color: #690f0f;
+  border: 1px solid #690f0f;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .button:hover,
@@ -76,8 +76,8 @@
   color: black;
 }
 .buttonFrame {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .flat {
@@ -91,25 +91,25 @@
   background-color: #f3e0d1;
 }
 a.router-link-active {
-    color: black;
-    background-color: #f3e0d1;
+  color: black;
+  background-color: #f3e0d1;
 }
 .highlighted {
-    background-color: blue;
+  background-color: blue;
 }
 
 @media all and (max-width: 576px) {
-    .buttons {
-        display: none;
-    }
+  .buttons {
+    display: none;
+  }
 }
 @media only screen and (min-width: 577px) and (max-width: 922px) {
-    .buttons {
-        display: none;
-    }    
+  .buttons {
+    display: none;
+  }
 }
 @media only screen and (min-width: 922px) and (max-width: 1200px) {
-.button {
+  .button {
     padding: 0.5rem 1rem;
     margin: 0;
     font-family: inherit;
@@ -120,6 +120,6 @@ a.router-link-active {
     text-decoration: none;
     font-size: 15px;
     white-space: nowrap;
-}
+  }
 }
 </style>

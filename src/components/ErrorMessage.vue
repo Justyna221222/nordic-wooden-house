@@ -1,21 +1,21 @@
 <template>
-    <div @click="$emit('close')"></div>
-    <dialog open>
-        <section>
-            <slot></slot>
-        </section>
-        <menu>
-            <slot name="actions">
-                <button @click="$emit('close')">Close</button>
-            </slot>
-        </menu>
-    </dialog>
+  <div @click="$emit('close')"></div>
+  <dialog open>
+    <section>
+      <slot></slot>
+    </section>
+    <menu>
+      <slot name="actions">
+        <button @click="$emit('close')">Close</button>
+      </slot>
+    </menu>
+  </dialog>
 </template>
 
 <script>
 export default {
-    emits: ['close']
-}
+  emits: ['close']
+};
 </script>
 
 <style scoped>
@@ -72,6 +72,4 @@ menu {
     width: 40rem;
   }
 }
-
-
 </style>

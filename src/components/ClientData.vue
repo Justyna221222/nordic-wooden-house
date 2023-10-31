@@ -11,32 +11,37 @@
 
     <div class="clientsList">
       <div class="main-header">
+        <img :src="this.imgLogo" alt="NWH" />
         <h2>Wybierz klienta z listy lub utwórz nowego</h2>
+      </div>
+      <div class="button-container-new-client">
         <button @click="newClient">Nowy klient</button>
       </div>
 
       <table id="clients" v-if="clients != ''">
         <tr>
           <th>IMIĘ</th>
-          <th>NAZWISKO</th>
           <th>TEL</th>
-          <th>EMAIL</th>
-          <th>ULICA</th>
-          <th>MIASTO</th>
-          <th>KOD POCZTOWY</th>
-          <th>KRAJ</th>
-          <th></th>
+          <th class="mobileInvisible">EMAIL</th>
+          <th>ADRES</th>
+
+          <th class="button-container"></th>
         </tr>
         <tr v-for="client in clients" :key="client.id">
-          <td>{{ client.firstname }}</td>
-          <td>{{ client.surname }}</td>
+          <td>{{ client.firstname }} <br />{{ client.surname }}</td>
           <td>{{ client.tel }}</td>
-          <td>{{ client.email }}</td>
-          <td>{{ client.street }}</td>
-          <td>{{ client.city }}</td>
-          <td>{{ client.zipcode }}</td>
-          <td>{{ client.country }}</td>
-          <td><button @click="chooseClient(client.id)">wybierz</button></td>
+          <td class="mobileInvisible">{{ client.email }}</td>
+          <td>
+            {{ client.street }}<br />
+            {{ client.zipcode }}<br />
+            {{ client.city }}<br />
+            {{ client.country }}
+          </td>
+          <td class="button-container">
+            <button @click="chooseClient(client.id)" class="choose">
+              wybierz
+            </button>
+          </td>
         </tr>
       </table>
     </div>
@@ -94,6 +99,7 @@
 </template>
 
 <script>
+import logo from '../../docs/images/NWH/NWH.png';
 export default {
   data() {
     return {
@@ -109,7 +115,8 @@ export default {
       },
       clients: [],
       showNewClientBox: false,
-      inputIsInvalid: false
+      inputIsInvalid: false,
+      imgLogo: logo
     };
   },
   mounted() {
@@ -293,6 +300,8 @@ h3 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .background {
   position: fixed;
@@ -352,5 +361,114 @@ form .form-field input {
 .buttons-container button {
   width: 100%;
   margin: 10px;
+}
+.main-header img {
+  margin: 10px;
+}
+.main-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+.main-header button {
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
+  margin: 8px;
+}
+.button-container-new-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container-new-client button {
+  width: 100%;
+  align-items: center;
+  padding: 8px;
+  margin: 10px auto 5px auto;
+}
+@media only screen and (min-width: 0px) and (max-width: 1200px) {
+  body {
+    width: 100%;
+  }
+  .container1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .clientsList {
+    margin: 5px;
+  }
+  .mobileInvisible {
+    display: none;
+  }
+  #clients {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 5px 0;
+    font-size: 13px;
+  }
+  .choose {
+    font-size: 14px;
+    padding: 10px;
+    margin: 0x;
+  }
+  #clients td,
+  #clients th {
+    padding: 5px;
+    width: 24%;
+    text-align: left;
+  }
+  .button-container {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  .button-container button {
+    margin: 0;
+  }
+  .main-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .main-header button {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    margin: 8px;
+  }
+  .main-header img {
+    margin: 10px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .button-container-new-client button {
+    width: 100%;
+    align-items: center;
+    padding: 8px;
+    margin: 10px auto 5px auto;
+  }
+  .new-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    position: fixed;
+    margin: 10px auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .buttons-container button {
+    width: 80%;
+    margin: 5px;
+  }
 }
 </style>

@@ -3,8 +3,8 @@
     <table class="table table-striped">
       <tbody>
         <tr class="highlighted">
-          <th>Window's item</th>
-          <th>Selected</th>
+          <th>Element okna</th>
+          <th>Wybrany</th>
         </tr>
         <tr>
           <td>System:</td>
@@ -142,25 +142,26 @@
           <p>E-mail</p>
           <input id="yourName" type="email" v-model="yourEmail" />
         </div>
-        <p v-if="invalidEmail" class="warning">Insert your e-mail address</p>
-        <div>
-          <input type="submit" value="Send windows price" />
-        </div>
+        <p v-if="invalidEmail" class="warning">Wprowadź adres e-mail</p>
       </div>
       <div v-if="emailSend" class="emailSend">
-        <p>The message has been sent. Thank you!</p>
+        <p>Wiadomość została wysłana. Dziękujemy!</p>
       </div>
       <div v-if="errSend">
-        <p>Something went wrong, please try again!</p>
+        <p>Coś poszło nie tak, spróbuj ponownie!</p>
+      </div>
+      <div>
+        <input type="submit" value="Wyślij" class="submit-button" />
       </div>
     </form>
     <div class="buttons">
       <div>
-        <button @click="addItem">Add another item</button>
+        <button @click="addItem">Dodaj następną pozycję</button>
       </div>
-      <div>
+
+      <!-- <div>
         <button @click="fromBeginning">Calculate from the beginning</button>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -179,6 +180,157 @@ export default {
   },
   methods: {
     addItem() {
+      var window = [];
+      var clientName =
+        this.$store.state.client.firstname +
+        ' ' +
+        this.$store.state.client.surname;
+
+      var clientsName = '<br><br>Klient: ' + clientName;
+      window.push(clientsName);
+      var clientTel = '<br>Tel: ' + this.$store.state.client.tel;
+      window.push(clientTel);
+      var clientEmail = '<br>Email: ' + this.$store.state.client.email;
+      window.push(clientEmail);
+      var clientAddress =
+        '<br>Adres: ' +
+        this.$store.state.client.street +
+        ' ' +
+        this.$store.state.client.zipcode +
+        ' ' +
+        this.$store.state.client.country;
+      window.push(clientAddress);
+      var date =
+        '<br>Termin wykonania: ' +
+        'od ' +
+        this.$store.state.dateFrom +
+        ' do ' +
+        this.$store.state.dateTo;
+      window.push(date);
+      var isDesc = this.$store.state.description;
+      if (isDesc !== '') {
+        var desc = '<br>Opis: ' + this.$store.state.description;
+        window.push(desc);
+      }
+      var quantity = '<br>Ilość: ' + this.$store.state.winQuantity;
+      window.push(quantity);
+      var system = '<br>System: ' + this.$store.state.windowSystem;
+      window.push(system);
+      var width = '<br> Szerokość: ' + this.$store.state.winWidth;
+      window.push(width);
+      var height = '<br> Wysokość: ' + this.$store.state.winHeight;
+      window.push(height);
+      var milling = '<br> Frezowanie: ' + this.$store.state.winMilling;
+      window.push(milling);
+      var profil = '<br> Profil: ' + this.$store.state.winProfile;
+      window.push(profil);
+      var insideColorRal;
+      if (
+        this.$store.state.winInsideColorRAL === '' ||
+        this.$store.state.winInsideColorRAL === undefined
+      ) {
+        insideColorRal = '';
+      } else {
+        insideColorRal = this.$store.state.winInsideColorRAL;
+      }
+      var insideColor =
+        '<br> Kolor wewnętrzny: ' +
+        this.$store.state.winInsideColor +
+        ' ' +
+        insideColorRal;
+      window.push(insideColor);
+      var outsideColorRal;
+      if (
+        this.$store.state.winOutsideColorRAL === '' ||
+        this.$store.state.winOutsideColorRAL === undefined
+      ) {
+        outsideColorRal = '';
+      } else {
+        outsideColorRal = this.$store.state.winOutsideColorRAL;
+      }
+      var outsideColor =
+        '<br> Kolor zewnętrzny: ' +
+        this.$store.state.winOutsideColor +
+        ' ' +
+        outsideColorRal;
+      window.push(outsideColor);
+      var filling = '<br>Wypełnienie: ' + this.$store.state.winFilling;
+      window.push(filling);
+      var glassesNumber =
+        '<br> Ilość szyb: ' + this.$store.state.winGlassesNumber;
+      window.push(glassesNumber);
+      var isBrake = this.$store.state.isBrake;
+      if (isBrake) {
+        var brake = '<br>Hamulec: ' + this.$store.state.winBrake;
+        window.push(brake);
+      }
+      var isFitting = this.$store.state.isFitting;
+      if (isFitting) {
+        var fitting = '<br>Okucie: ' + this.$store.state.winFitting;
+        window.push(fitting);
+      }
+      var isEspagnolette = this.$store.state.isEspagnolette;
+      if (isEspagnolette) {
+        var espagnolette =
+          '<br>Typ zasuwnicy: ' + this.$store.state.winEspagnolette;
+        window.push(espagnolette);
+      }
+      var isInsert = this.$store.state.isInsert;
+      if (isInsert) {
+        var insert = '<br>Wkładka: ' + this.$store.state.winInsert;
+        window.push(insert);
+      }
+      var isDiffuser = this.$store.state.isDiffuser;
+      if (isDiffuser) {
+        var diffuser =
+          '<br>Nawiewnik i okapnik: ' + this.$store.state.winDiffuserDripCap;
+        window.push(diffuser);
+      }
+      var areHooksForviders = this.$store.state.areHooksForviders;
+      if (areHooksForviders) {
+        var hooks = '<br>Haczyki: ' + this.$store.state.winHooks;
+        window.push(hooks);
+        var forviders = '<br>Forviders: ' + this.$store.state.winForviders;
+        window.push(forviders);
+      }
+      var areMuntins = this.$store.state.areMuntins;
+      if (areMuntins === 'TAK') {
+        var muntinColorRal = this.$store.state.winMuntinColorRAL;
+        var muntinRAL;
+        if (muntinColorRal === ' ' || muntinColorRal === undefined) {
+          muntinRAL = '';
+        } else {
+          muntinRAL = this.$store.state.winMuntinColorRAL;
+        }
+        var muntins =
+          '<br>Szprosy: ' +
+          this.$store.state.winMuntinType +
+          ' <br>Kolor szpros: ' +
+          this.$store.state.winMuntinColor +
+          ' ' +
+          muntinRAL +
+          '<br> Ilość pól poziomo: ' +
+          this.$store.state.winCuantityHorizontalMuntins +
+          '<br> Iość pól pionowo: ' +
+          this.$store.state.winCuantityHorizontalMuntins;
+        window.push(muntins);
+      }
+      var isGrabber = this.$store.state.isGrabber;
+      if (isGrabber) {
+        var grabber =
+          '<br>Pochwycik balkonowy z zatrzaskiem: ' +
+          this.$store.state.winGrabber;
+        window.push(grabber);
+      }
+      var winDescription = this.$store.state.winDescription;
+      if (winDescription !== undefined) {
+        var description =
+          '<br>Dodatkowy opis: ' + this.$store.state.winDescription;
+        window.push(description);
+      }
+
+      /*
+
       const window = {
         Klient:
           this.$store.state.client.firstname +
@@ -242,7 +394,7 @@ export default {
         'Dodatkowy opis': this.$store.state.winDescription
       };
       console.log(window);
-      console.log(window.typ);
+      console.log(window.typ);*/
 
       this.$store.commit('addNewWindow', window);
       /* Clear store to add new window*/
@@ -282,92 +434,188 @@ export default {
     sendEmail() {
       let mail = this.yourEmail;
       if (mail === '' || mail.includes('@')) {
-        const window = {
-          Klient:
-            this.$store.state.client.firstname +
-            ' ' +
-            this.$store.state.client.surname +
-            ' tel: ' +
-            this.$store.state.client.tel +
-            ' Email: ' +
-            this.$store.state.client.email +
-            ' Adres: ' +
-            this.$store.state.client.street +
-            ' ' +
-            this.$store.state.client.zipcode +
-            ' ' +
-            this.$store.state.client.country,
-          Data:
-            'od ' +
-            this.$store.state.dateFrom +
-            ' do ' +
-            this.$store.state.dateTo,
-          Opis: this.$store.state.description,
-          Ilość: this.$store.state.winQuantity,
-          System: this.$store.state.windowSystem,
-          Typ: this.$store.state.windowType,
-          Szerokość: this.$store.state.winWidth,
-          Wysokość: this.$store.state.winHeight,
-          Profil: this.$store.state.winProfile,
-          Frezowanie: this.$store.state.winMilling,
-          Klamki: this.$store.state.winHandles,
-          Otwieranie: this.$store.state.winOpen,
-          Słupek: this.$store.state.winPost,
-          Próg: this.$store.state.winDoorStep,
-          'Kolor wewnętrzny':
-            this.$store.state.winInsideColor +
-            ' ' +
-            this.$store.state.winInsideColorRAL,
-          'Kolor zewnętrzny':
-            this.$store.state.winOutsideColor +
-            ' ' +
-            this.$store.state.winOutsideColorRAL,
-          Wypełnienie: this.$store.state.winFilling,
-          'Ilość szyb': this.$store.state.winGlassesNumber,
-          Hamulec: this.$store.state.winBrake,
-          'Nawiewnik i okapnik': this.$store.state.winDiffuserDripCap,
-          Haczyk: this.$store.state.winHooks,
-          Forviders: this.$store.state.winForviders,
-          Szprosy:
-            this.$store.state.winMuntins +
-            'Typ: ' +
+        var window = [];
+        var clientName =
+          this.$store.state.client.firstname +
+          ' ' +
+          this.$store.state.client.surname;
+
+        var clientsName = '<br><br>Klient: ' + clientName;
+        window.push(clientsName);
+        var clientTel = '<br>Tel: ' + this.$store.state.client.tel;
+        window.push(clientTel);
+        var clientEmail = '<br>Email: ' + this.$store.state.client.email;
+        window.push(clientEmail);
+        var clientAddress =
+          '<br>Adres: ' +
+          this.$store.state.client.street +
+          ' ' +
+          this.$store.state.client.zipcode +
+          ' ' +
+          this.$store.state.client.country;
+        window.push(clientAddress);
+        var date =
+          '<br>Termin wykonania: ' +
+          'od ' +
+          this.$store.state.dateFrom +
+          ' do ' +
+          this.$store.state.dateTo;
+        window.push(date);
+        var isDesc = this.$store.state.description;
+        if (isDesc !== '') {
+          var desc = '<br>Opis: ' + this.$store.state.description;
+          window.push(desc);
+        }
+        var quantity = '<br>Ilość: ' + this.$store.state.winQuantity;
+        window.push(quantity);
+        var system = '<br>System: ' + this.$store.state.windowSystem;
+        window.push(system);
+        var width = '<br> Szerokość: ' + this.$store.state.winWidth;
+        window.push(width);
+        var height = '<br> Wysokość: ' + this.$store.state.winHeight;
+        window.push(height);
+        var milling = '<br> Frezowanie: ' + this.$store.state.winMilling;
+        window.push(milling);
+        var profil = '<br> Profil: ' + this.$store.state.winProfile;
+        window.push(profil);
+        var insideColorRal;
+        if (
+          this.$store.state.winInsideColorRAL === '' ||
+          this.$store.state.winInsideColorRAL === undefined
+        ) {
+          insideColorRal = '';
+        } else {
+          insideColorRal = this.$store.state.winInsideColorRAL;
+        }
+        var insideColor =
+          '<br> Kolor wewnętrzny: ' +
+          this.$store.state.winInsideColor +
+          ' ' +
+          insideColorRal;
+        window.push(insideColor);
+        var outsideColorRal;
+        if (
+          this.$store.state.winOutsideColorRAL === '' ||
+          this.$store.state.winOutsideColorRAL === undefined
+        ) {
+          outsideColorRal = '';
+        } else {
+          outsideColorRal = this.$store.state.winOutsideColorRAL;
+        }
+        var outsideColor =
+          '<br> Kolor zewnętrzny: ' +
+          this.$store.state.winOutsideColor +
+          ' ' +
+          outsideColorRal;
+        window.push(outsideColor);
+        var filling = '<br>Wypełnienie: ' + this.$store.state.winFilling;
+        window.push(filling);
+        var glassesNumber =
+          '<br> Ilość szyb: ' + this.$store.state.winGlassesNumber;
+        window.push(glassesNumber);
+        var isBrake = this.$store.state.isBrake;
+        if (isBrake) {
+          var brake = '<br>Hamulec: ' + this.$store.state.winBrake;
+          window.push(brake);
+        }
+        var isFitting = this.$store.state.isFitting;
+        if (isFitting) {
+          var fitting = '<br>Okucie: ' + this.$store.state.winFitting;
+          window.push(fitting);
+        }
+        var isEspagnolette = this.$store.state.isEspagnolette;
+        if (isEspagnolette) {
+          var espagnolette =
+            '<br>Typ zasuwnicy: ' + this.$store.state.winEspagnolette;
+          window.push(espagnolette);
+        }
+        var isInsert = this.$store.state.isInsert;
+        if (isInsert) {
+          var insert = '<br>Wkładka: ' + this.$store.state.winInsert;
+          window.push(insert);
+        }
+        var isDiffuser = this.$store.state.isDiffuser;
+        if (isDiffuser) {
+          var diffuser =
+            '<br>Nawiewnik i okapnik: ' + this.$store.state.winDiffuserDripCap;
+          window.push(diffuser);
+        }
+        var areHooksForviders = this.$store.state.areHooksForviders;
+        if (areHooksForviders) {
+          var hooks = '<br>Haczyki: ' + this.$store.state.winHooks;
+          window.push(hooks);
+          var forviders = '<br>Forviders: ' + this.$store.state.winForviders;
+          window.push(forviders);
+        }
+        var areMuntins = this.$store.state.areMuntins;
+        if (areMuntins === 'TAK') {
+          var muntinColorRal = this.$store.state.winMuntinColorRAL;
+          var muntinRAL;
+          if (muntinColorRal === ' ' || muntinColorRal === undefined) {
+            muntinRAL = '';
+          } else {
+            muntinRAL = this.$store.state.winMuntinColorRAL;
+          }
+          var muntins =
+            '<br>Szprosy: ' +
             this.$store.state.winMuntinType +
-            ' ' +
+            ' <br>Kolor szpros: ' +
             this.$store.state.winMuntinColor +
-            this.$store.state.winMuntinColorRAL,
-          'Szprosy ilość poziomo/pionowo':
+            ' ' +
+            muntinRAL +
+            '<br> Ilość pól poziomo: ' +
             this.$store.state.winCuantityHorizontalMuntins +
-            ' / ' +
-            this.$store.state.winCuantityVerticalMuntins,
-          Okucia: this.$store.state.winFitting,
-          Zasuwnica: this.$store.state.winEspagnolette,
-          'Pochwycik balkonowy': this.$store.state.winGrabber,
-          'Dodatkowy opis': this.$store.state.winDescription
-        };
+            '<br> Iość pól pionowo: ' +
+            this.$store.state.winCuantityHorizontalMuntins;
+          window.push(muntins);
+        }
+        var isGrabber = this.$store.state.isGrabber;
+        if (isGrabber) {
+          var grabber =
+            '<br>Pochwycik balkonowy z zatrzaskiem: ' +
+            this.$store.state.winGrabber;
+          window.push(grabber);
+        }
+        var winDescription = this.$store.state.winDescription;
+        if (winDescription !== undefined) {
+          var description =
+            '<br>Dodatkowy opis: ' + this.$store.state.winDescription;
+          window.push(description);
+        }
 
         this.$store.commit('addNewWindow', window);
 
-      //  if (this.yourEmail == '') {
-       //   this.invalidEmail = true;
-       //   return;
-      // } else {
-          const Windows = this.$store.state.Windows;
+        //  if (this.yourEmail == '') {
+        //   this.invalidEmail = true;
+        //   return;
+        // } else {
+        const Windows = this.$store.state.Windows;
 
-          var parsed = '';
-          for (let i = 0; i < Windows.length; i++) {
-            var Okna = Windows[i];
-            for (var property in Okna) {
-              parsed += property + ' : ' + Okna[property] + '\r\n' + '<br>';
-            }
-            parsed += '<br><br><br>';
-          }
+        //   var parsed = '';
+        //  for (let i = 0; i < Windows.length; i++) {
+        //   var Okna = Windows[i];
+        //   for (var el in Okna) {
+        //     parsed += Windows[el] + '<br>';
+        //   }
+        //   parsed += '<br><br><br>';
+        //  }
 
-          this.mojeOkna = parsed;
-          console.log(this.mojeOkna);
-       // }
+        // var parsed = '';
+        // for (let i = 0; i < Windows.length; i++) {
+        //   var Okna = Windows[i];
+        //   for (var property in Okna) {
+        //     parsed += property + ' : ' + Okna[property] + '\r\n' + '<br>';
+        //   }
+        //   parsed += '<br><br><br>';
+        // }
+
+        // this.mojeOkna = parsed;
+        console.log(this.mojeOkna);
+        // }
 
         const templateParams = {
-          Okna: this.mojeOkna,
+          Okna: Windows,
+          // Okna: this.mojeOkna,
           yourEmail: this.yourEmail
         };
         emailjs
@@ -434,8 +682,8 @@ export default {
       } else {
         this.invalidEmail = false;
       }
-    },
-    fromBeginning() {
+    }
+    /* fromBeginning() {
       (this.$store.state.winType = ''),
         (this.$store.state.width = ''),
         (this.$store.state.height = ''),
@@ -459,7 +707,7 @@ export default {
         (this.$store.state.Windows = []),
         (this.yourEmail = ''),
         this.$router.push('/');
-    }
+    }*/
   },
   computed: {
     isThereHandle() {
@@ -551,6 +799,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  box-sizing: border-box;
+}
 .summary {
   font-size: 16px;
   margin: 20px;
@@ -606,6 +857,8 @@ input {
 .buttons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
   padding: 0;
   margin: 30px 0;
@@ -614,34 +867,37 @@ button {
   padding: 0.75rem 1.5rem;
   width: 300px;
   font-family: inherit;
-  background-color: #cb2c2c;
-  border: 1px solid #3a0061;
-  color: white;
+  background-color: #cfac58;
+  border: 1px solid #000000;
+  color: black;
   cursor: pointer;
+  margin: 0;
 }
 input[type='submit'] {
   padding: 0.75rem 1.5rem;
   width: 300px;
   font-family: inherit;
+  font-size: 18px;
   background-color: darkgreen;
-  border: 2px solid #3a0061;
+  border: 1px solid #000000;
   color: white;
   cursor: pointer;
+  margin: 0;
 }
 input[type='submit']:hover {
   background-color: green;
-  border: 2px solid white;
+  border: 2px solid #003300;
 }
 
 button:hover,
 button:active {
-  background-color: #690f0f;
-  border-color: #270041;
+  background-color: #947e4a;
+  border: 1px solid #270041;
 }
 .warning {
   color: red;
 }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
+@media only screen and (min-width: 0px) and (max-width: 900px) {
   .header {
     margin: 20px 0;
   }
@@ -662,8 +918,8 @@ button:active {
     padding: 0;
     margin: 0;
   }
-  button {
-    padding: 0.75rem 1.5rem;
+  .add-new {
+    display: block;
     width: 100%;
     margin: 3px 0;
     font-family: inherit;
@@ -673,53 +929,15 @@ button:active {
     cursor: pointer;
   }
   input[type='submit'] {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 577px) and (max-width: 768px) {
-  .header {
-    margin: 20px 0 20px 0;
-  }
-  .previous {
-    margin: 20px 0 20px 20px;
-    padding: 5px 20px;
-    font-size: 14px;
-  }
-  .next {
-    margin: 20px 20px 20px 0;
-    padding: 5px 20px;
-    font-size: 14px;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-  }
-  button {
     padding: 0.75rem 1.5rem;
-    width: 100%;
-    margin: 3px 0;
+    width: 300px;
     font-family: inherit;
-    background-color: #cb2c2c;
-    border: 1px solid #3a0061;
+    font-size: 18px;
+    background-color: darkgreen;
+    border: 1px solid #000000;
     color: white;
     cursor: pointer;
-  }
-  input[type='submit'] {
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .header {
-    margin: 20px 0 20px 0;
-  }
-  .previous {
-    margin: 0 0 20px 20px;
-  }
-  .next {
-    margin: 0 20px 20px 0;
+    margin: 10px;
   }
 }
 </style>

@@ -6,7 +6,7 @@ const appStore = createStore({
             client: [],
             dateFrom: 'BRAK',
             dateTo: 'BRAK',
-            description: 'BRAK',
+            description: '',
             choosenSystem: [],
             areHandles: true,
             profilesToChoose: [],
