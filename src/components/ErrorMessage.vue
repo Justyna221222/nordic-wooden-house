@@ -1,4 +1,5 @@
 <template>
+<div>
   <div @click="$emit('close')"></div>
   <dialog open>
     <section>
@@ -10,6 +11,7 @@
       </slot>
     </menu>
   </dialog>
+  </div>
 </template>
 
 <script>

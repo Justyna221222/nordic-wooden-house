@@ -1,4 +1,5 @@
 <template>
+<div>
   <div class="summary">
     <table class="table table-striped">
       <tbody>
@@ -163,6 +164,7 @@
         <button @click="fromBeginning">Calculate from the beginning</button>
       </div>-->
     </div>
+  </div>
   </div>
 </template>
 <script>
